@@ -1,0 +1,51 @@
+/* ==========================================================
+   PIE DE PÁGINA
+   ----------------------------------------------------------
+   Personaliza la apariencia del footer institucional y de
+   los enlaces mostrados al final del sitio.
+   ========================================================== */
+
+/* Define el color de fondo del pie de página. */
+.footer-aci{
+
+    background:#0D6EFD;
+
+    color:white;
+
+    padding:60px 0 20px;
+
+}
+
+/* Personaliza los enlaces del footer. */
+.footer-aci a{
+
+    color:white;
+
+    text-decoration:none;
+
+}
+
+/* Resalta los enlaces cuando el usuario pasa el cursor. */
+.footer-aci a:hover{
+
+    color:#FFD54F;
+
+}
+
+/* Organiza los iconos de redes sociales. */
+.redes-sociales{
+
+    display:flex;
+
+    gap:18px;
+
+    font-size:30px;
+
+}
+
+/* Agrega una animación a los iconos sociales. */
+.redes-sociales a:hover{
+
+    transform:translateY(-5px);
+
+}

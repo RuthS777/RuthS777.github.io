@@ -1,0 +1,61 @@
+/* Aplica la fuente principal del sitio a todo el documento. */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Cambia suavemente los colores cuando exista alguna interacción. */
+* {
+    transition: .3s;
+}
+
+/*
+==========================================================
+TRANSICIONES GENERALES
+Permiten que los cambios visuales sean suaves.
+==========================================================
+*/
+
+body{
+
+    transition:
+
+        background-color .25s ease,
+
+        color .25s ease;
+
+}
+
+.navbar{
+
+    transition:
+
+        background-color .25s ease;
+
+}
+
+.card,
+.tarjeta-aci,
+.accordion-item,
+.modal-content,
+footer{
+
+    transition:
+
+        background-color .25s ease,
+
+        color .25s ease;
+
+}
+
+/*
+==========================================================
+EFECTO SOBRE LAS IMÁGENES
+Hace que aumenten ligeramente al pasar el mouse.
+==========================================================
+*/
+
+img:hover {
+
+    transform: scale(1.02);
+
+}

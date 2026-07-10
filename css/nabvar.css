@@ -1,0 +1,132 @@
+/* Da mayor protagonismo al nombre de la academia. */
+/* Logo y nombre de la academia. */
+.navbar-brand{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    flex:1;
+
+}
+
+/* Nombre de la academia. */
+/* Da un tamaño equilibrado al nombre de la academia. */
+.navbar-brand h1{
+
+    font-size:1.75rem;
+
+    margin:0;
+
+    font-weight:700;
+
+}
+
+/* Eslogan. */
+.navbar-brand small{
+
+    color:#0D6EFD !important;
+
+    font-size:.85rem;
+
+}
+
+/* Empuja el menú completamente hacia la derecha. */
+.navbar-collapse{
+
+    justify-content:flex-end;
+
+}
+
+/* Personaliza los enlaces del menú principal. */
+.nav-link {
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+/* Cambia el color del enlace cuando el usuario pasa el mouse encima. */
+.nav-link:hover {
+    color: #0D6EFD;
+}
+
+/* Resalta la opción correspondiente a la página actual. */
+.nav-link.active {
+    color: #0D6EFD !important;
+    font-weight: 600;
+}
+
+
+/* Centra verticalmente los elementos del menú. */
+.navbar-nav .nav-item{
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+/* Organiza cada opción del menú en columna. */
+/* Organiza correctamente el icono y el texto del menú. */
+.navbar-nav .nav-link{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    min-width:78px;
+
+    padding:.45rem .5rem;
+
+}
+
+/* Da el mismo espacio a todos los iconos. */
+.navbar-nav .nav-link i{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:20px;
+
+    height:20px;
+
+    margin-bottom:4px;
+
+    font-size:.95rem;
+
+}
+
+/* Reduce el tamaño del botón del modo oscuro. */
+#modoOscuro{
+
+    padding:8px 14px;
+
+    font-size:.9rem;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+}
+
+/* Mantiene un ancho fijo para evitar que el botón cambie de tamaño. */
+#modoOscuro{
+
+    width:150px;
+
+    justify-content:center;
+
+}
+

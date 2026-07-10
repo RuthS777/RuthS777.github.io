@@ -1,0 +1,85 @@
+/* Da una apariencia uniforme a los títulos principales de cada sección. */
+.titulo-seccion {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: #0D6EFD;
+}
+
+/* Personaliza las tarjetas para diferenciarse del estilo básico de Bootstrap. */
+.tarjeta-aci {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+}
+
+/* Agrega una animación suave cuando el usuario pasa el cursor sobre la tarjeta. */
+.tarjeta-aci:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(13,110,253,.20);
+}
+
+/* Aumenta el tamaño y el color de los iconos principales. */
+.icono-card {
+    font-size: 55px;
+    color: #0D6EFD;
+    margin-bottom: 20px;
+}
+
+/* ==========================================================
+   TARJETAS DE CURSOS
+   ----------------------------------------------------------
+   Personaliza la apariencia de las tarjetas utilizadas para
+   mostrar los idiomas impartidos por la academia.
+   ========================================================== */
+
+/* Da una apariencia moderna a las tarjetas de cursos. */
+.tarjeta-curso{
+
+    border:none;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+/* Agrega un efecto visual cuando el usuario pasa el cursor. */
+.tarjeta-curso:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 15px 35px rgba(13,110,253,.20);
+
+}
+
+/* Mantiene todas las imágenes con el mismo tamaño. */
+.tarjeta-curso img{
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+/* ==========================================================
+   LLAMADO A LA ACCIÓN (CTA)
+   ----------------------------------------------------------
+   Resalta la invitación principal para que el visitante
+   conozca los programas ofrecidos por la academia.
+   ========================================================== */
+
+/* Redondea la sección principal del llamado a la acción. */
+.bg-primary{
+
+    border-radius:20px;
+
+}
+
+/* Resalta el botón principal cuando el usuario pasa el cursor. */
+.bg-primary .btn:hover{
+
+    transform:scale(1.05);
+
+}

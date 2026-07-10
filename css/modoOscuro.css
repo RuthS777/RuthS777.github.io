@@ -1,0 +1,119 @@
+/*
+==========================================================
+MODO OSCURO
+----------------------------------------------------------
+Estos estilos modifican los colores principales del sitio
+cuando el usuario activa el modo oscuro.
+==========================================================
+*/
+
+/* Fondo general del sitio. */
+html.modo-oscuro body {
+
+    background-color: #121212;
+
+    color: #F8F9FA;
+
+}
+
+/* Encabezado y barra de navegación. */
+html.modo-oscuro .navbar {
+
+    background-color: #1E1E1E !important;
+
+}
+
+/* Color de los enlaces del menú. */
+html.modo-oscuro .nav-link {
+
+    color: #F8F9FA !important;
+
+}
+
+/* Color del nombre de la academia. */
+html.modo-oscuro .navbar-brand h1 {
+
+    color: #FFFFFF;
+
+}
+
+/* Color del eslogan. */
+html.modo-oscuro .navbar-brand small {
+
+    color: #CCCCCC !important;
+
+}
+
+/* Tarjetas y acordeón. */
+html.modo-oscuro .card,
+html.modo-oscuro .accordion-item {
+
+    background-color: #1E1E1E;
+
+    color: #F8F9FA;
+
+}
+
+/* Contenido del acordeón. */
+html.modo-oscuro .accordion-button {
+
+    background-color: #2C2C2C;
+
+    color: #FFFFFF;
+
+}
+
+/* Acordeón abierto. */
+html.modo-oscuro .accordion-button:not(.collapsed) {
+
+    background-color: #0D6EFD;
+
+    color: #FFFFFF;
+
+}
+
+/* Formularios. */
+html.modo-oscuro .form-control,
+html.modo-oscuro .form-select {
+
+    background-color: #2B2B2B;
+
+    color: #FFFFFF;
+
+    border-color: #555555;
+
+}
+
+/* Placeholders. */
+html.modo-oscuro .form-control::placeholder {
+
+    color: #BDBDBD;
+
+}
+
+/* Modal. */
+html.modo-oscuro .modal-content {
+
+    background-color: #1E1E1E;
+
+    color: #F8F9FA;
+
+}
+
+/* Footer. */
+html.modo-oscuro footer {
+
+    background-color: #0F0F0F;
+
+}
+
+/* Comentarios. */
+html.modo-oscuro .list-group-item {
+
+    background-color: #252525;
+
+    color: #F8F9FA;
+
+    border-color: #3A3A3A;
+
+}

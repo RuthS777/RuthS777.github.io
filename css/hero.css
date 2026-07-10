@@ -1,0 +1,51 @@
+/* Agrega espacio vertical alrededor de la portada principal. */
+.hero {
+    padding: 80px 0;
+}
+
+/* Limita el tamaño de la imagen para mantener un diseño equilibrado. */
+.hero-imagen {
+    max-width: 500px;
+}
+
+/* Redondea las imágenes del carrusel para dar una apariencia moderna. */
+/*
+==========================================================
+CARRUSEL
+----------------------------------------------------------
+Mantiene un tamaño uniforme y evita imágenes demasiado altas.
+==========================================================
+*/
+
+.carousel{
+
+    max-width:1100px;
+
+    margin:0 auto;
+
+}
+
+.carousel img{
+
+    width:100%;
+
+    height:450px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+}
+
+/* Mejora la legibilidad del texto mostrado sobre las imágenes. */
+.carousel-caption{
+
+    background:rgba(0,0,0,.45);
+
+    border-radius:12px;
+
+    padding:18px;
+
+    bottom:35px;
+
+}
