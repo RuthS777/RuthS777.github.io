@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <!--
+    Aplica el modo oscuro antes de que la página se dibuje
+    para evitar el destello del tema claro.
+-->
+    <script>
+
+        if (localStorage.getItem("modo") === "oscuro") {
+
+            document.documentElement.classList.add("modo-oscuro");
+
+        }
+
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Academia Centroamericana de Idiomas (ACI). Aprende idiomas con profesores calificados mediante una metodología moderna e innovadora.">
+    <meta name="keywords"
+        content="idiomas, academia, centroamérica, ACI, aprender, cursos, inglés, francés, alemán, italiano, portugués, República Dominicana">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Suero R.">
+
+    <title>Enlaces de Ínteres | Academia Centroamericana de Idiomas</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/logoACI.png">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔗</text></svg>">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- CSS del proyecto -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/modoOscuro.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- ==========================================================
+        ENCABEZADO DEL SITIO
+        ========================================================== -->
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid px-4">
+
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+
+                    <img src="img/logoACI.png" alt="Logo ACI" width="70" class="me-3">
+
+                    <div>
+
+                        <h1 class="fs-4 mb-0">
+
+                            Academia Centroamericana de Idiomas
+
+                        </h1>
+
+                        <small class="text-muted">
+
+                            Constrong>Conectando culturas, formando futuros.</strong>
+
+                        </small>
+
+                    </div>
+
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+
+                            <a class="nav-link" href="index.html">
+
+                                <i class="bi bi-house-fill"></i>
+
+                                Inicio
+
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link" href="nosotros.html">
+
+                                <i class="bi bi-people-fill"></i>
+
+                                Nosotros
+
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link" href="cursos.html">
+
+                                <i class="bi bi-journal-bookmark-fill"></i>
+
+                                Cursos
+
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link" href="noticias.html">
+
+                                <i class="bi bi-newspaper"></i>
+
+                                Noticias
+
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link active" href="enlaces.html">
+
+                                <i class="bi bi-play-circle-fill"></i>
+
+                                Enlaces
+
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link" href="contacto.html">
+
+                                <i class="bi bi-envelope-fill"></i>
+
+                                Contacto
+
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item ms-lg-3">
+
+                            <button id="modoOscuro" class="btn btn-outline-primary">
+
+                                <i class="bi bi-moon-fill"></i>
+
+                                Modo oscuro
+
+                            </button>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- ==========================================================
+        CONTENIDO PRINCIPAL
+        ========================================================== -->
+
+    <main>
+
+        <!--
+        ==========================================================
+        PORTADA
+        Presenta la sección de enlaces de interés.
+        ==========================================================
+    -->
+
+        <section class="hero">
+
+            <div class="container">
+
+                <div class="row align-items-center">
+
+                    <div class="col-lg-6">
+
+                        <h2 class="display-4 fw-bold">
+
+                            Recursos de Interés
+
+                        </h2>
+
+                        <p class="lead mt-4">
+
+                            Explora recursos recomendados para fortalecer
+                            tu aprendizaje de idiomas y conoce la ubicación
+                            de nuestra academia.
+
+                        </p>
+
+                    </div>
+
+                    <div class="col-lg-6 text-center">
+
+                        <img src="img/recursos.jpg" class="img-fluid hero-imagen" alt="Recursos educativos">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--
+        ==========================================================
+        VIDEOS RECOMENDADOS
+        ==========================================================
+    -->
+
+        <section class="container my-5">
+
+            <h2 class="titulo-seccion text-center">
+
+                Videos Recomendados
+
+            </h2>
+
+            <p class="text-center mb-5">
+
+                Aprende más sobre idiomas mediante estos recursos audiovisuales.
+
+            </p>
+
+            <div class="row g-4">
+
+                <div class="col-lg-6">
+
+                    <div class="ratio ratio-16x9">
+
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/t_Yy0X8G1NM?si=y_INlKlHj-f3tNbM"
+                            title="Aprende Inglés desde Cero" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    </div>
+
+                    <h4 class="mt-3">
+
+                        Aprende Inglés desde Cero
+
+                    </h4>
+
+                </div>
+
+                <div class="col-lg-6">
+
+                    <div class="ratio ratio-16x9">
+
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/TZta-beBAKo?si=v6eld5_4ZU3RRW6h"
+                            title="Introducción al Francés" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    </div>
+
+                    <h4 class="mt-3">
+
+                        Introducción al Francés
+
+                    </h4>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--
+        ==========================================================
+        MAPA
+        ==========================================================
+    -->
+
+        <section class="container my-5">
+
+            <h2 class="titulo-seccion text-center">
+
+                Nuestra Ubicación
+
+            </h2>
+
+            <p class="text-center mb-5">
+
+                Visítanos en nuestra sede principal.
+
+            </p>
+
+            <div class="ratio ratio-16x9">
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.3400480549754!2d-69.949591!3d18.485999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89f362e578d3%3A0x19d59fe09af95898!2sUniversidad%20Nacional%20Pedro%20Henr%C3%ADquez%20Ure%C3%B1a%20(UNPHU)!5e0!3m2!1ses-419!2sdo!4v1782000738028!5m2!1ses-419!2sdo"
+                    style="border:0;" allowfullscreen="" loading="lazy">
+
+                </iframe>
+
+            </div>
+
+        </section>
+
+        <!--
+        ==========================================================
+        ENLACES ÚTILES
+        ==========================================================
+    -->
+
+        <section class="container my-5">
+
+            <h2 class="titulo-seccion text-center">
+
+                Recursos Recomendados
+
+            </h2>
+
+            <div class="row g-4 mt-3">
+
+                <div class="col-md-4">
+
+                    <div class="tarjeta-aci p-4 text-center h-100">
+
+                        <i class="bi bi-translate icono-card"></i>
+
+                        <h4>
+
+                            Traductores
+
+                        </h4>
+
+                        <p>
+
+                            Herramientas para practicar vocabulario y traducción.
+
+                        </p>
+
+                        <a href="https://translate.google.com" target="_blank" class="btn btn-primary">
+
+                            Visitar
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="tarjeta-aci p-4 text-center h-100">
+
+                        <i class="bi bi-book-half icono-card"></i>
+
+                        <h4>
+
+                            Diccionarios
+
+                        </h4>
+
+                        <p>
+
+                            Consulta definiciones y pronunciaciones oficiales.
+
+                        </p>
+
+                        <a href="https://dictionary.cambridge.org" target="_blank" class="btn btn-success">
+
+                            Visitar
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="tarjeta-aci p-4 text-center h-100">
+
+                        <i class="bi bi-laptop icono-card"></i>
+
+                        <h4>
+
+                            Plataforma ACI
+
+                        </h4>
+
+                        <p>
+
+                            Accede a nuestros cursos y recursos virtuales.
+
+                        </p>
+
+                        <button class="btn btn-warning"
+                            onclick="alert('La plataforma estará disponible próximamente.')">
+
+                            Próximamente
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!--
+        ==========================================================
+        PIE DE PÁGINA
+        Contiene información institucional, enlaces rápidos,
+        redes sociales y acceso a las políticas de privacidad.
+        ==========================================================
+    -->
+
+    <footer class="footer-aci mt-5">
+
+        <div class="container">
+
+            <div class="row gy-4">
+
+                <!-- Información institucional -->
+                <div class="col-lg-4">
+
+                    <img src="img/logoACI.png" alt="Logo ACI" width="90">
+
+                    <h4 class="mt-3">
+
+                        Academia Centroamericana de Idiomas
+
+                    </h4>
+
+                    <p>
+
+                        Conectando culturas, formando futuros mediante una educación
+                        de calidad y oportunidades para el crecimiento profesional.
+
+                    </p>
+
+                </div>
+
+                <!-- Navegación -->
+                <div class="col-lg-4">
+
+                    <h5>
+
+                        Navegación
+
+                    </h5>
+
+                    <ul class="list-unstyled">
+
+                        <li>
+
+                            <a href="index.html">
+
+                                Inicio
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="nosotros.html">
+
+                                Nosotros
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="cursos.html">
+
+                                Cursos
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="noticias.html">
+
+                                Noticias
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="enlaces.html">
+
+                                Enlaces
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="contacto.html">
+
+                                Contacto
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Redes sociales -->
+                <div class="col-lg-4">
+
+                    <h5>
+
+                        Síguenos
+
+                    </h5>
+
+                    <div class="redes-sociales mb-4">
+
+                        <a href="#">
+
+                            <i class="bi bi-facebook"></i>
+
+                        </a>
+
+                        <a href="#">
+
+                            <i class="bi bi-instagram"></i>
+
+                        </a>
+
+                        <a href="#">
+
+                            <i class="bi bi-twitter-x"></i>
+
+                        </a>
+
+                        <a href="#">
+
+                            <i class="bi bi-youtube"></i>
+
+                        </a>
+
+                    </div>
+
+                    <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#modalPrivacidad">
+
+                        Políticas de Privacidad
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="text-center">
+
+                <p class="mb-0">
+
+                    © 2026 Academia Centroamericana de Idiomas (ACI). Todos los derechos reservados.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!--
+        ==========================================================
+        MODAL DE POLÍTICAS DE PRIVACIDAD
+        Se muestra sin necesidad de abandonar la página.
+        ==========================================================
+    -->
+
+    <div class="modal fade" id="modalPrivacidad" tabindex="-1" aria-hidden="true">
+
+        <div class="modal-dialog modal-lg">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h2 class="modal-title fs-4">
+
+                        Políticas de Privacidad
+
+                    </h2>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+
+                    </button>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <p>
+
+                        Academia Centroamericana de Idiomas (ACI) protege la
+                        información personal suministrada por sus estudiantes y
+                        visitantes.
+
+                    </p>
+
+                    <p>
+
+                        Los datos recopilados mediante los formularios del sitio
+                        únicamente serán utilizados para responder solicitudes de
+                        información, procesos de inscripción y comunicación
+                        institucional.
+
+                    </p>
+
+                    <p>
+
+                        La academia no comparte información personal con terceros
+                        sin autorización del usuario, salvo cuando sea requerido
+                        por la legislación vigente.
+
+                    </p>
+
+                    <p>
+
+                        Al utilizar este sitio web, el visitante acepta estas
+                        políticas de privacidad.
+
+                    </p>
+
+                </div>
+
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+
+                        Entendido
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ==========================================================
+        JAVASCRIPT
+        ========================================================== -->
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Archivos JavaScript del proyecto -->
+    <script src="js/app.js"></script>
+    <script src="js/darkmode.js"></script>
+    <script src="js/contacto.js"></script>
+
+</body>
+
+</html>
