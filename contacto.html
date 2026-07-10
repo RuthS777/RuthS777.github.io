@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+        <!--
+    Aplica el modo oscuro antes de que la página se dibuje
+    para evitar el destello del tema claro.
+-->
+        <script>
+
+            if (localStorage.getItem("modo") === "oscuro") {
+
+                document.documentElement.classList.add("modo-oscuro");
+
+            }
+
+        </script>
+        
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Academia Centroamericana de Idiomas (ACI). Aprende idiomas con profesores calificados mediante una metodología moderna e innovadora.">
+    <meta name="keywords"
+        content="idiomas, academia, centroamérica, ACI, aprender, cursos, inglés, francés, alemán, italiano, portugués, República Dominicana">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Suero R.">
+
+    <title>Contacto | Academia Centroamericana de Idiomas</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/logoACI.png">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📞</text></svg>">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- CSS del proyecto -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/modoOscuro.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- ==========================================================
+        ENCABEZADO DEL SITIO
+        ========================================================== -->
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid px-4">
+
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+
+                    <img src="img/logoACI.png" alt="Logo ACI" width="70" class="me-3">
+
+                    <div>
+
+                        <h1 class="fs-4 mb-0">
+
+                            Academia Centroamericana de Idiomas
+
+                        </h1>
+
+                        <small class="text-muted">
+
+                            Constrong>Conectando culturas, formando futuros.</strong>
+
+                        </small>
+
+                    </div>
+
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+
+                            <a class="nav-link" href="index.html">
+
+                                <i class="bi bi-house-fill"></i>
+
+                                Inicio
+
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link" href="nosotros.html">
+
+                                <i class="bi bi-people-fill"></i>
+
+                                Nosotros
+
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link" href="cursos.html">
+
+                                <i class="bi bi-journal-bookmark-fill"></i>
+
+                                Cursos
+
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link" href="noticias.html">
+
+                                <i class="bi bi-newspaper"></i>
+
+                                Noticias
+
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link" href="enlaces.html">
+
+                                <i class="bi bi-play-circle-fill"></i>
+
+                                Enlaces
+
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link active" href="contacto.html">
+
+                                <i class="bi bi-envelope-fill"></i>
+
+                                Contacto
+
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item ms-lg-3">
+
+                            <button id="modoOscuro" class="btn btn-outline-primary">
+
+                                <i class="bi bi-moon-fill"></i>
+
+                                Modo oscuro
+
+                            </button>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- ==========================================================
+        CONTENIDO PRINCIPAL
+        ========================================================== -->
+
+    <main>
+
+    <!--
+        ==========================================================
+        PORTADA
+        Presenta la sección de contacto de la academia.
+        ==========================================================
+    -->
+
+    <section class="hero">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-6">
+
+                    <h2 class="display-4 fw-bold">
+
+                        Contáctanos
+
+                    </h2>
+
+                    <p class="lead mt-4">
+
+                        ¿Tienes dudas sobre nuestros cursos?
+                        Completa el formulario o comunícate con nosotros
+                        mediante cualquiera de nuestros canales oficiales.
+
+                    </p>
+
+                </div>
+
+                <div class="col-lg-6 text-center">
+
+                    <img
+                        src="img/concato.jpg"
+                        class="img-fluid hero-imagen"
+                        alt="Contacto ACI">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--
+        ==========================================================
+        INFORMACIÓN DE CONTACTO
+        ==========================================================
+    -->
+
+    <section class="container my-5">
+
+        <div class="row g-4">
+
+            <div class="col-lg-5">
+
+                <div class="tarjeta-aci p-4 h-100">
+
+                    <h2 class="titulo-seccion">
+
+                        Información
+
+                    </h2>
+
+                    <p>
+
+                        <i class="bi bi-geo-alt-fill text-primary"></i>
+
+                        Av. John F. Kennedy,
+                        Universidad Nacional Pedro Henríquez Ureña (UNPHU),
+                        Santo Domingo.
+
+                    </p>
+
+                    <p>
+
+                        <i class="bi bi-telephone-fill text-primary"></i>
+
+                        (809) 555-1234
+
+                    </p>
+
+                    <p>
+
+                        <i class="bi bi-envelope-fill text-primary"></i>
+
+                        info@aci.edu.do
+
+                    </p>
+
+                    <p>
+
+                        <i class="bi bi-clock-fill text-primary"></i>
+
+                        Lunes a Viernes
+                        8:00 a.m. - 6:00 p.m.
+
+                    </p>
+
+                    <hr>
+
+                    <h4>
+
+                        Redes Sociales
+
+                    </h4>
+
+                    <div class="redes-sociales">
+
+                        <a href="#">
+
+                            <i class="bi bi-facebook"></i>
+
+                        </a>
+
+                        <a href="#">
+
+                            <i class="bi bi-instagram"></i>
+
+                        </a>
+
+                        <a href="#">
+
+                            <i class="bi bi-twitter-x"></i>
+
+                        </a>
+
+                        <a href="#">
+
+                            <i class="bi bi-youtube"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ======================================================
+                 FORMULARIO
+                 ====================================================== -->
+
+            <div class="col-lg-7">
+
+                <div class="tarjeta-aci p-4">
+
+                    <h2 class="titulo-seccion">
+
+                        Escríbenos
+
+                    </h2>
+
+                    <form id="formContacto">
+
+                        <div class="row">
+
+                            <div class="col-md-6 mb-3">
+
+                                <label class="form-label">
+
+                                    Nombre
+
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="nombreContacto"
+                                    class="form-control"
+                                    placeholder="Nombre completo">
+
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+
+                                <label class="form-label">
+
+                                    Correo
+
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="correoContacto"
+                                    class="form-control"
+                                    placeholder="correo@ejemplo.com">
+
+                            </div>
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <label class="form-label">
+
+                                Asunto
+
+                            </label>
+
+                            <input
+                                type="text"
+                                id="asuntoContacto"
+                                class="form-control"
+                                placeholder="Asunto">
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <label class="form-label">
+
+                                Mensaje
+
+                            </label>
+
+                            <textarea
+                                id="mensajeContacto"
+                                rows="6"
+                                class="form-control"
+                                placeholder="Escriba aquí su mensaje">
+
+                            </textarea>
+
+                        </div>
+
+                        <div class="d-flex gap-3 flex-wrap">
+
+                            <button
+                                type="submit"
+                                class="btn btn-primary">
+
+                                <i class="bi bi-send-fill"></i>
+
+                                Enviar
+
+                            </button>
+
+                            <a
+                                href="mailto:info@aci.edu.do?subject=Consulta desde la página web"
+                                class="btn btn-success">
+
+                                <i class="bi bi-envelope-paper-fill"></i>
+
+                                Enviar por correo
+
+                            </a>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<!--
+    Toast mostrado cuando el formulario se envía correctamente.
+-->
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+
+    <div
+        id="toastContacto"
+        class="toast text-bg-primary border-0"
+        role="alert">
+
+        <div class="d-flex">
+
+            <div class="toast-body">
+
+                <i class="bi bi-check-circle-fill"></i>
+
+                ¡Gracias por contactarnos! Hemos recibido tu mensaje.
+
+            </div>
+
+            <button
+                type="button"
+                class="btn-close btn-close-white me-2 m-auto"
+                data-bs-dismiss="toast">
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+        <!--
+        ==========================================================
+        MODAL DE INSCRIPCIÓN
+        Permite al visitante solicitar información o inscribirse
+        en cualquiera de los cursos sin salir de la página.
+        ==========================================================
+    -->
+        <div class="modal fade" id="modalInscripcion" tabindex="-1" aria-labelledby="tituloModal" aria-hidden="true">
+
+            <div class="modal-dialog modal-lg">
+
+                <div class="modal-content">
+
+                    <form id="formInscripcion">
+
+                        <div class="modal-header">
+
+                            <h2 class="modal-title fs-4" id="tituloModal">
+
+                                Solicitud de inscripción
+
+                            </h2>
+
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar">
+
+                            </button>
+
+                        </div>
+
+                        <div class="modal-body">
+
+                            <div class="row">
+
+                                <div class="col-md-6 mb-3">
+
+                                    <label class="form-label">
+
+                                        Nombre completo
+
+                                    </label>
+
+                                    <input type="text" class="form-control" id="nombre" placeholder="Escriba su nombre">
+
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+
+                                    <label class="form-label">
+
+                                        Correo electrónico
+
+                                    </label>
+
+                                    <input type="email" class="form-control" id="correo"
+                                        placeholder="correo@ejemplo.com">
+
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+
+                                <div class="col-md-6 mb-3">
+
+                                    <label class="form-label">
+
+                                        Teléfono
+
+                                    </label>
+
+                                    <input type="tel" class="form-control" id="telefono" placeholder="809-000-0000">
+
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+
+                                    <label class="form-label">
+
+                                        Curso de interés
+
+                                    </label>
+
+                                    <select class="form-select" id="curso">
+
+                                        <option selected>
+
+                                            Seleccione un curso
+
+                                        </option>
+
+                                        <option>Inglés</option>
+
+                                        <option>Francés</option>
+
+                                        <option>Alemán</option>
+
+                                        <option>Italiano</option>
+
+                                        <option>Portugués</option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+
+                                    Nivel
+
+                                </label>
+
+                                <select class="form-select" id="nivel">
+
+                                    <option selected>
+
+                                        Seleccione un nivel
+
+                                    </option>
+
+                                    <option>Básico</option>
+
+                                    <option>Intermedio</option>
+
+                                    <option>Avanzado</option>
+
+                                </select>
+
+                            </div>
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+
+                                    Mensaje
+
+                                </label>
+
+                                <textarea class="form-control" id="mensaje" rows="5"
+                                    placeholder="Escriba aquí su mensaje">
+
+                            </textarea>
+
+                            </div>
+
+                        </div>
+
+                        <div class="modal-footer">
+
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+
+                                Cancelar
+
+                            </button>
+
+                            <button type="submit" class="btn btn-success">
+
+                                <i class="bi bi-send-fill"></i>
+
+                                Enviar solicitud
+
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    
+    <!--
+        ==========================================================
+        PIE DE PÁGINA
+        Contiene información institucional, enlaces rápidos,
+        redes sociales y acceso a las políticas de privacidad.
+        ==========================================================
+    -->
+
+    <footer class="footer-aci mt-5">
+
+        <div class="container">
+
+            <div class="row gy-4">
+
+                <!-- Información institucional -->
+                <div class="col-lg-4">
+
+                    <img src="img/logoACI.png" alt="Logo ACI" width="90">
+
+                    <h4 class="mt-3">
+
+                        Academia Centroamericana de Idiomas
+
+                    </h4>
+
+                    <p>
+
+                        Conectando culturas, formando futuros mediante una educación
+                        de calidad y oportunidades para el crecimiento profesional.
+
+                    </p>
+
+                </div>
+
+                <!-- Navegación -->
+                <div class="col-lg-4">
+
+                    <h5>
+
+                        Navegación
+
+                    </h5>
+
+                    <ul class="list-unstyled">
+
+                        <li>
+
+                            <a href="index.html">
+
+                                Inicio
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="nosotros.html">
+
+                                Nosotros
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="cursos.html">
+
+                                Cursos
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="noticias.html">
+
+                                Noticias
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="enlaces.html">
+
+                                Enlaces
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="contacto.html">
+
+                                Contacto
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Redes sociales -->
+                <div class="col-lg-4">
+
+                    <h5>
+
+                        Síguenos
+
+                    </h5>
+
+                    <div class="redes-sociales mb-4">
+
+                        <a href="#">
+
+                            <i class="bi bi-facebook"></i>
+
+                        </a>
+
+                        <a href="#">
+
+                            <i class="bi bi-instagram"></i>
+
+                        </a>
+
+                        <a href="#">
+
+                            <i class="bi bi-twitter-x"></i>
+
+                        </a>
+
+                        <a href="#">
+
+                            <i class="bi bi-youtube"></i>
+
+                        </a>
+
+                    </div>
+
+                    <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#modalPrivacidad">
+
+                        Políticas de Privacidad
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="text-center">
+
+                <p class="mb-0">
+
+                    © 2026 Academia Centroamericana de Idiomas (ACI). Todos los derechos reservados.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!--
+        ==========================================================
+        MODAL DE POLÍTICAS DE PRIVACIDAD
+        Se muestra sin necesidad de abandonar la página.
+        ==========================================================
+    -->
+
+    <div class="modal fade" id="modalPrivacidad" tabindex="-1" aria-hidden="true">
+
+        <div class="modal-dialog modal-lg">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h2 class="modal-title fs-4">
+
+                        Políticas de Privacidad
+
+                    </h2>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+
+                    </button>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <p>
+
+                        Academia Centroamericana de Idiomas (ACI) protege la
+                        información personal suministrada por sus estudiantes y
+                        visitantes.
+
+                    </p>
+
+                    <p>
+
+                        Los datos recopilados mediante los formularios del sitio
+                        únicamente serán utilizados para responder solicitudes de
+                        información, procesos de inscripción y comunicación
+                        institucional.
+
+                    </p>
+
+                    <p>
+
+                        La academia no comparte información personal con terceros
+                        sin autorización del usuario, salvo cuando sea requerido
+                        por la legislación vigente.
+
+                    </p>
+
+                    <p>
+
+                        Al utilizar este sitio web, el visitante acepta estas
+                        políticas de privacidad.
+
+                    </p>
+
+                </div>
+
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+
+                        Entendido
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ==========================================================
+        JAVASCRIPT
+        ========================================================== -->
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Archivos JavaScript del proyecto -->
+    <script src="js/app.js"></script>
+    <script src="js/darkmode.js"></script>
+    <script src="js/contacto.js"></script>
+
+</body>
+
+</html>
