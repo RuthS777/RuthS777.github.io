@@ -1,0 +1,1779 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+        <!--
+    Aplica el modo oscuro antes de que la página se dibuje
+    para evitar el destello del tema claro.
+-->
+        <script>
+
+            if (localStorage.getItem("modo") === "oscuro") {
+
+                document.documentElement.classList.add("modo-oscuro");
+
+            }
+
+        </script>
+        
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Academia Centroamericana de Idiomas (ACI). Aprende idiomas con profesores calificados mediante una metodología moderna e innovadora.">
+    <meta name="keywords"
+        content="idiomas, academia, centroamérica, ACI, aprender, cursos, inglés, francés, alemán, italiano, portugués, República Dominicana">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Suero R.">
+
+    <title>Cursos | Academia Centroamericana de Idiomas</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/logoACI.png">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📝</text></svg>">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- CSS del proyecto -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/modoOscuro.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- ==========================================================
+        ENCABEZADO DEL SITIO
+        ========================================================== -->
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid px-4">
+
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+
+                    <img src="img/logoACI.png" alt="Logo ACI" width="70" class="me-3">
+
+                    <div>
+
+                        <h1 class="fs-4 mb-0">
+
+                            Academia Centroamericana de Idiomas
+
+                        </h1>
+
+                        <small class="text-muted">
+
+                            Constrong>Conectando culturas, formando futuros.</strong>
+
+                        </small>
+
+                    </div>
+
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+
+                            <a class="nav-link" href="index.html">
+
+                                <i class="bi bi-house-fill"></i>
+
+                                Inicio
+
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link" href="nosotros.html">
+
+                                <i class="bi bi-people-fill"></i>
+
+                                Nosotros
+
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link active" href="cursos.html">
+
+                                <i class="bi bi-journal-bookmark-fill"></i>
+
+                                Cursos
+
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link" href="noticias.html">
+
+                                <i class="bi bi-newspaper"></i>
+
+                                Noticias
+
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link" href="enlaces.html">
+
+                                <i class="bi bi-play-circle-fill"></i>
+
+                                Enlaces
+
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link" href="contacto.html">
+
+                                <i class="bi bi-envelope-fill"></i>
+
+                                Contacto
+
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item ms-lg-3">
+
+                            <button id="modoOscuro" class="btn btn-outline-primary">
+
+                                <i class="bi bi-moon-fill"></i>
+
+                                Modo oscuro
+
+                            </button>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- ==========================================================
+        CONTENIDO PRINCIPAL
+        ========================================================== -->
+
+    <main>
+
+        <!--
+            Presenta la oferta académica e invita al visitante
+            a explorar todos los programas disponibles.
+        -->
+
+        <section class="hero">
+
+            <div class="container">
+
+                <div class="row align-items-center">
+
+                    <div class="col-lg-6">
+
+                        <h2 class="display-4 fw-bold">
+
+                            Nuestros Programas de Idiomas
+
+                        </h2>
+
+                        <p class="lead mt-4">
+
+                            Descubre nuestros cursos, conoce sus horarios,
+                            profesores y comienza tu proceso de inscripción.
+
+                        </p>
+
+                    </div>
+
+                    <div class="col-lg-6 text-center">
+
+                        <img src="img/programaAcademico.jpg" class="img-fluid hero-imagen" alt="Programas académicos">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--
+            Accordion donde se muestran todos los idiomas
+            impartidos por la academia.
+        -->
+
+        <section class="container my-5">
+
+            <h2 class="titulo-seccion text-center">
+
+                Nuestros Programas
+
+            </h2>
+
+            <div class="accordion mt-5" id="accordionCursos">
+
+                <!-- ==========================================================
+                    CURSO DE INGLÉS
+                    ========================================================== -->
+                <div class="accordion-item">
+
+                    <h2 class="accordion-header">
+
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#ingles">
+
+                            🇺🇸 Inglés
+
+                        </button>
+
+                    </h2>
+
+                    <div id="ingles" class="accordion-collapse collapse show" data-bs-parent="#accordionCursos">
+
+                        <div class="accordion-body">
+
+                            <div class="row align-items-center">
+
+                                <!-- Imagen del curso -->
+                                <div class="col-lg-5">
+
+                                    <img src="img/ingles.jpg" class="img-fluid rounded shadow" alt="Curso de Inglés">
+
+                                </div>
+
+                                <!-- Información del curso -->
+                                <div class="col-lg-7">
+
+                                    <h3>
+
+                                        Curso de Inglés
+
+                                    </h3>
+
+                                    <p>
+
+                                        Programa diseñado para desarrollar las
+                                        habilidades de comunicación oral y escrita
+                                        mediante actividades prácticas, tecnología
+                                        educativa y profesores especializados.
+
+                                    </p>
+
+                                    <hr>
+
+                                    <div class="row">
+
+                                        <div class="col-md-6">
+
+                                            <p>
+
+                                                <strong>Duración:</strong><br>
+
+                                                12 meses
+
+                                            </p>
+
+                                            <p>
+
+                                                <strong>Nivel:</strong><br>
+
+                                                Básico, Intermedio y Avanzado
+
+                                            </p>
+
+                                        </div>
+
+                                        <div class="col-md-6">
+
+                                            <p>
+
+                                                <strong>Modalidad:</strong><br>
+
+                                                Presencial y Virtual
+
+                                            </p>
+
+                                            <p>
+
+                                                <strong>Profesor:</strong><br>
+
+                                                Lic. Michael Thompson
+
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+
+                                    <p>
+
+                                        <strong>Horarios disponibles:</strong>
+
+                                    </p>
+
+                                    <ul>
+
+                                        <li>Lunes y Miércoles • 6:00 p.m. - 8:00 p.m.</li>
+
+                                        <li>Martes y Jueves • 8:00 a.m. - 10:00 a.m.</li>
+
+                                        <li>Sábados • 9:00 a.m. - 12:00 m.</li>
+
+                                    </ul>
+
+                                    <button class="btn btn-primary mt-3" data-bs-toggle="modal"
+                                        data-bs-target="#modalInscripcion">
+
+                                        <i class="bi bi-pencil-square"></i>
+
+                                        Inscribirme
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                            <hr class="my-5">
+
+                            <!-- Comentarios de estudiantes -->
+
+                            <h4>
+
+                                Calificaciones de estudiantes
+
+                            </h4>
+
+                            <p class="text-muted">
+
+                                Opiniones de estudiantes que completaron este programa.
+
+                            </p>
+
+                            <div class="list-group">
+
+                                <div class="list-group-item">
+
+                                    <div class="d-flex justify-content-between">
+
+                                        <strong>
+
+                                            María López
+
+                                        </strong>
+
+                                        <span class="text-warning">
+
+                                            ★★★★★
+
+                                        </span>
+
+                                    </div>
+
+                                    <small class="text-muted">
+
+                                        Hace 2 semanas
+
+                                    </small>
+
+                                    <p class="mt-2 mb-0">
+
+                                        Excelente metodología. Los profesores
+                                        siempre responden las dudas y las clases
+                                        son muy dinámicas.
+
+                                    </p>
+
+                                </div>
+
+                                <div class="list-group-item">
+
+                                    <div class="d-flex justify-content-between">
+
+                                        <strong>
+
+                                            Carlos Pérez
+
+                                        </strong>
+
+                                        <span class="text-warning">
+
+                                            ★★★★★
+
+                                        </span>
+
+                                    </div>
+
+                                    <small class="text-muted">
+
+                                        Hace 1 mes
+
+                                    </small>
+
+                                    <p class="mt-2 mb-0">
+
+                                        Aprendí muchísimo. Ahora puedo mantener
+                                        conversaciones en inglés con confianza.
+
+                                    </p>
+
+                                </div>
+
+                                <div class="list-group-item">
+
+                                    <div class="d-flex justify-content-between">
+
+                                        <strong>
+
+                                            Laura Gómez
+
+                                        </strong>
+
+                                        <span class="text-warning">
+
+                                            ★★★★☆
+
+                                        </span>
+
+                                    </div>
+
+                                    <small class="text-muted">
+
+                                        Hace 3 meses
+
+                                    </small>
+
+                                    <p class="mt-2 mb-0">
+
+                                        Muy buenos materiales y excelentes
+                                        instalaciones.
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- ==========================================================
+                    CURSO DE FRANCÉS
+                    ========================================================== -->
+                <div class="accordion-item">
+
+                    <h2 class="accordion-header">
+
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#frances">
+
+                            🇫🇷 Francés
+
+                        </button>
+
+                    </h2>
+
+                    <div id="frances" class="accordion-collapse collapse" data-bs-parent="#accordionCursos">
+
+                        <div class="accordion-body">
+
+                            <div class="row align-items-center">
+
+                                <!-- Imagen del curso -->
+                                <div class="col-lg-5">
+
+                                    <img src="img/frances.jpg" class="img-fluid rounded shadow" alt="Curso de Francés">
+
+                                </div>
+
+                                <!-- Información del curso -->
+                                <div class="col-lg-7">
+
+                                    <h3>
+
+                                        Curso de Francés
+
+                                    </h3>
+
+                                    <p>
+
+                                        Aprende uno de los idiomas más importantes
+                                        para la comunicación internacional mediante
+                                        actividades prácticas enfocadas en la expresión
+                                        oral, comprensión auditiva y escritura.
+
+                                    </p>
+
+                                    <hr>
+
+                                    <div class="row">
+
+                                        <div class="col-md-6">
+
+                                            <p>
+
+                                                <strong>Duración:</strong><br>
+
+                                                10 meses
+
+                                            </p>
+
+                                            <p>
+
+                                                <strong>Nivel:</strong><br>
+
+                                                Básico, Intermedio y Avanzado
+
+                                            </p>
+
+                                        </div>
+
+                                        <div class="col-md-6">
+
+                                            <p>
+
+                                                <strong>Modalidad:</strong><br>
+
+                                                Presencial y Virtual
+
+                                            </p>
+
+                                            <p>
+
+                                                <strong>Profesor:</strong><br>
+
+                                                Lic. Pierre Dubois
+
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+
+                                    <p>
+
+                                        <strong>Horarios disponibles:</strong>
+
+                                    </p>
+
+                                    <ul>
+
+                                        <li>Lunes y Miércoles • 7:00 p.m. - 9:00 p.m.</li>
+
+                                        <li>Martes y Jueves • 9:00 a.m. - 11:00 a.m.</li>
+
+                                        <li>Sábados • 8:00 a.m. - 11:00 a.m.</li>
+
+                                    </ul>
+
+                                    <button class="btn btn-primary mt-3" data-bs-toggle="modal"
+                                        data-bs-target="#modalInscripcion">
+
+                                        <i class="bi bi-pencil-square"></i>
+
+                                        Inscribirme
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                            <hr class="my-5">
+
+                            <h4>
+
+                                Calificaciones de estudiantes
+
+                            </h4>
+
+                            <p class="text-muted">
+
+                                Opiniones de estudiantes que completaron este programa.
+
+                            </p>
+
+                            <div class="list-group">
+
+                                <div class="list-group-item">
+
+                                    <div class="d-flex justify-content-between">
+
+                                        <strong>
+
+                                            Andrea Castillo
+
+                                        </strong>
+
+                                        <span class="text-warning">
+
+                                            ★★★★★
+
+                                        </span>
+
+                                    </div>
+
+                                    <small class="text-muted">
+
+                                        Hace 3 semanas
+
+                                    </small>
+
+                                    <p class="mt-2 mb-0">
+
+                                        Las clases son entretenidas y los profesores
+                                        explican muy bien la pronunciación.
+
+                                    </p>
+
+                                </div>
+
+                                <div class="list-group-item">
+
+                                    <div class="d-flex justify-content-between">
+
+                                        <strong>
+
+                                            José Martínez
+
+                                        </strong>
+
+                                        <span class="text-warning">
+
+                                            ★★★★★
+
+                                        </span>
+
+                                    </div>
+
+                                    <small class="text-muted">
+
+                                        Hace 2 meses
+
+                                    </small>
+
+                                    <p class="mt-2 mb-0">
+
+                                        Muy buena metodología. En poco tiempo pude
+                                        mantener conversaciones básicas.
+
+                                    </p>
+
+                                </div>
+
+                                <div class="list-group-item">
+
+                                    <div class="d-flex justify-content-between">
+
+                                        <strong>
+
+                                            Daniela Ramírez
+
+                                        </strong>
+
+                                        <span class="text-warning">
+
+                                            ★★★★☆
+
+                                        </span>
+
+                                    </div>
+
+                                    <small class="text-muted">
+
+                                        Hace 4 meses
+
+                                    </small>
+
+                                    <p class="mt-2 mb-0">
+
+                                        Excelente atención y materiales muy completos.
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- ==========================================================
+                    CURSO DE ALEMÁN
+                    ========================================================== -->
+                <div class="accordion-item">
+
+                    <h2 class="accordion-header">
+
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#aleman">
+
+                            🇩🇪 Alemán
+
+                        </button>
+
+                    </h2>
+
+                    <div id="aleman" class="accordion-collapse collapse" data-bs-parent="#accordionCursos">
+
+                        <div class="accordion-body">
+
+                            <div class="row align-items-center">
+
+                                <div class="col-lg-5">
+
+                                    <img src="img/aleman.jpg" class="img-fluid rounded shadow" alt="Curso de Alemán">
+
+                                </div>
+
+                                <div class="col-lg-7">
+
+                                    <h3>
+
+                                        Curso de Alemán
+
+                                    </h3>
+
+                                    <p>
+
+                                        Desarrolla competencias lingüísticas para
+                                        estudiar, trabajar o viajar a países de habla
+                                        alemana mediante una metodología moderna y
+                                        práctica.
+
+                                    </p>
+
+                                    <hr>
+
+                                    <div class="row">
+
+                                        <div class="col-md-6">
+
+                                            <p><strong>Duración:</strong><br>12 meses</p>
+
+                                            <p><strong>Nivel:</strong><br>Básico, Intermedio y Avanzado</p>
+
+                                        </div>
+
+                                        <div class="col-md-6">
+
+                                            <p><strong>Modalidad:</strong><br>Presencial y Virtual</p>
+
+                                            <p><strong>Profesor:</strong><br>Lic. Hans Müller</p>
+
+                                        </div>
+
+                                    </div>
+
+                                    <p><strong>Horarios disponibles:</strong></p>
+
+                                    <ul>
+
+                                        <li>Lunes y Miércoles • 5:00 p.m. - 7:00 p.m.</li>
+
+                                        <li>Martes y Jueves • 7:00 p.m. - 9:00 p.m.</li>
+
+                                        <li>Sábados • 8:00 a.m. - 11:00 a.m.</li>
+
+                                    </ul>
+
+                                    <button class="btn btn-primary mt-3" data-bs-toggle="modal"
+                                        data-bs-target="#modalInscripcion">
+
+                                        <i class="bi bi-pencil-square"></i>
+
+                                        Inscribirme
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                            <hr class="my-5">
+
+                            <h4>Calificaciones de estudiantes</h4>
+
+                            <p class="text-muted">
+
+                                Opiniones de estudiantes que finalizaron este curso.
+
+                            </p>
+
+                            <div class="list-group">
+
+                                <div class="list-group-item">
+
+                                    <div class="d-flex justify-content-between">
+
+                                        <strong>Ricardo Núñez</strong>
+
+                                        <span class="text-warning">★★★★★</span>
+
+                                    </div>
+
+                                    <small class="text-muted">Hace 1 mes</small>
+
+                                    <p class="mt-2 mb-0">
+
+                                        Excelente profesor y materiales muy completos.
+
+                                    </p>
+
+                                </div>
+
+                                <div class="list-group-item">
+
+                                    <div class="d-flex justify-content-between">
+
+                                        <strong>Sofía Herrera</strong>
+
+                                        <span class="text-warning">★★★★★</span>
+
+                                    </div>
+
+                                    <small class="text-muted">Hace 2 meses</small>
+
+                                    <p class="mt-2 mb-0">
+
+                                        Muy buena preparación para certificaciones internacionales.
+
+                                    </p>
+
+                                </div>
+
+                                <div class="list-group-item">
+
+                                    <div class="d-flex justify-content-between">
+
+                                        <strong>Eduardo García</strong>
+
+                                        <span class="text-warning">★★★★☆</span>
+
+                                    </div>
+
+                                    <small class="text-muted">Hace 4 meses</small>
+
+                                    <p class="mt-2 mb-0">
+
+                                        Las clases son dinámicas y muy bien organizadas.
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- ==========================================================
+                    CURSO DE ITALIANO
+                    ========================================================== -->
+                <div class="accordion-item">
+
+                    <h2 class="accordion-header">
+
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#italiano">
+
+                            🇮🇹 Italiano
+
+                        </button>
+
+                    </h2>
+
+                    <div id="italiano" class="accordion-collapse collapse" data-bs-parent="#accordionCursos">
+
+                        <div class="accordion-body">
+
+                            <div class="row align-items-center">
+
+                                <div class="col-lg-5">
+
+                                    <img src="img/italiano.jpg" class="img-fluid rounded shadow"
+                                        alt="Curso de Italiano">
+
+                                </div>
+
+                                <div class="col-lg-7">
+
+                                    <h3>
+
+                                        Curso de Italiano
+
+                                    </h3>
+
+                                    <p>
+
+                                        Aprende italiano mediante una metodología
+                                        comunicativa enfocada en la pronunciación,
+                                        comprensión y conversación para estudios,
+                                        turismo o negocios.
+
+                                    </p>
+
+                                    <hr>
+
+                                    <div class="row">
+
+                                        <div class="col-md-6">
+
+                                            <p><strong>Duración:</strong><br>10 meses</p>
+
+                                            <p><strong>Nivel:</strong><br>Básico, Intermedio y Avanzado</p>
+
+                                        </div>
+
+                                        <div class="col-md-6">
+
+                                            <p><strong>Modalidad:</strong><br>Presencial y Virtual</p>
+
+                                            <p><strong>Profesor:</strong><br>Lic. Marco Rossi</p>
+
+                                        </div>
+
+                                    </div>
+
+                                    <p><strong>Horarios disponibles:</strong></p>
+
+                                    <ul>
+
+                                        <li>Lunes y Miércoles • 7:00 p.m. - 9:00 p.m.</li>
+
+                                        <li>Martes y Jueves • 5:00 p.m. - 7:00 p.m.</li>
+
+                                        <li>Sábados • 9:00 a.m. - 12:00 m.</li>
+
+                                    </ul>
+
+                                    <button class="btn btn-primary mt-3" data-bs-toggle="modal"
+                                        data-bs-target="#modalInscripcion">
+
+                                        <i class="bi bi-pencil-square"></i>
+
+                                        Inscribirme
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                            <hr class="my-5">
+
+                            <h4>
+
+                                Calificaciones de estudiantes
+
+                            </h4>
+
+                            <p class="text-muted">
+
+                                Opiniones de estudiantes que completaron este programa.
+
+                            </p>
+
+                            <div class="list-group">
+
+                                <div class="list-group-item">
+
+                                    <div class="d-flex justify-content-between">
+
+                                        <strong>Ana Fernández</strong>
+
+                                        <span class="text-warning">★★★★★</span>
+
+                                    </div>
+
+                                    <small class="text-muted">
+
+                                        Hace 2 semanas
+
+                                    </small>
+
+                                    <p class="mt-2 mb-0">
+
+                                        Muy buen ambiente de aprendizaje y excelentes profesores.
+
+                                    </p>
+
+                                </div>
+
+                                <div class="list-group-item">
+
+                                    <div class="d-flex justify-content-between">
+
+                                        <strong>Luis Morales</strong>
+
+                                        <span class="text-warning">★★★★★</span>
+
+                                    </div>
+
+                                    <small class="text-muted">
+
+                                        Hace 1 mes
+
+                                    </small>
+
+                                    <p class="mt-2 mb-0">
+
+                                        Las clases son prácticas y permiten avanzar rápidamente.
+
+                                    </p>
+
+                                </div>
+
+                                <div class="list-group-item">
+
+                                    <div class="d-flex justify-content-between">
+
+                                        <strong>Paola Díaz</strong>
+
+                                        <span class="text-warning">★★★★☆</span>
+
+                                    </div>
+
+                                    <small class="text-muted">
+
+                                        Hace 3 meses
+
+                                    </small>
+
+                                    <p class="mt-2 mb-0">
+
+                                        Muy buena experiencia y excelentes materiales.
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- ==========================================================
+                     CURSO DE PORTUGUÉS
+                     ========================================================== -->
+                <div class="accordion-item">
+
+                    <h2 class="accordion-header">
+
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#portugues">
+
+                            🇵🇹 Portugués
+
+                        </button>
+
+                    </h2>
+
+                    <div id="portugues" class="accordion-collapse collapse" data-bs-parent="#accordionCursos">
+
+                        <div class="accordion-body">
+
+                            <div class="row align-items-center">
+
+                                <div class="col-lg-5">
+
+                                    <img src="img/portugues.jpg" class="img-fluid rounded shadow"
+                                        alt="Curso de Portugués">
+
+                                </div>
+
+                                <div class="col-lg-7">
+
+                                    <h3>
+
+                                        Curso de Portugués
+
+                                    </h3>
+
+                                    <p>
+
+                                        Programa diseñado para desarrollar las
+                                        competencias necesarias para comunicarse
+                                        con fluidez en contextos académicos,
+                                        profesionales y turísticos.
+
+                                    </p>
+
+                                    <hr>
+
+                                    <div class="row">
+
+                                        <div class="col-md-6">
+
+                                            <p><strong>Duración:</strong><br>10 meses</p>
+
+                                            <p><strong>Nivel:</strong><br>Básico, Intermedio y Avanzado</p>
+
+                                        </div>
+
+                                        <div class="col-md-6">
+
+                                            <p><strong>Modalidad:</strong><br>Presencial y Virtual</p>
+
+                                            <p><strong>Profesor:</strong><br>Lic. João Silva</p>
+
+                                        </div>
+
+                                    </div>
+
+                                    <p><strong>Horarios disponibles:</strong></p>
+
+                                    <ul>
+
+                                        <li>Lunes y Miércoles • 6:00 p.m. - 8:00 p.m.</li>
+
+                                        <li>Martes y Jueves • 8:00 a.m. - 10:00 a.m.</li>
+
+                                        <li>Sábados • 8:00 a.m. - 11:00 a.m.</li>
+
+                                    </ul>
+
+                                    <button class="btn btn-primary mt-3" data-bs-toggle="modal"
+                                        data-bs-target="#modalInscripcion">
+
+                                        <i class="bi bi-pencil-square"></i>
+
+                                        Inscribirme
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                            <hr class="my-5">
+
+                            <h4>
+
+                                Calificaciones de estudiantes
+
+                            </h4>
+
+                            <p class="text-muted">
+
+                                Opiniones de estudiantes que completaron este programa.
+
+                            </p>
+
+                            <div class="list-group">
+
+                                <div class="list-group-item">
+
+                                    <div class="d-flex justify-content-between">
+
+                                        <strong>Gabriela Santos</strong>
+
+                                        <span class="text-warning">★★★★★</span>
+
+                                    </div>
+
+                                    <small class="text-muted">
+
+                                        Hace 2 semanas
+
+                                    </small>
+
+                                    <p class="mt-2 mb-0">
+
+                                        Excelente curso y profesores muy dedicados.
+
+                                    </p>
+
+                                </div>
+
+                                <div class="list-group-item">
+
+                                    <div class="d-flex justify-content-between">
+
+                                        <strong>Pedro Castillo</strong>
+
+                                        <span class="text-warning">★★★★★</span>
+
+                                    </div>
+
+                                    <small class="text-muted">
+
+                                        Hace 1 mes
+
+                                    </small>
+
+                                    <p class="mt-2 mb-0">
+
+                                        Aprendí rápidamente gracias a la metodología.
+
+                                    </p>
+
+                                </div>
+
+                                <div class="list-group-item">
+
+                                    <div class="d-flex justify-content-between">
+
+                                        <strong>Laura Mendoza</strong>
+
+                                        <span class="text-warning">★★★★☆</span>
+
+                                    </div>
+
+                                    <small class="text-muted">
+
+                                        Hace 4 meses
+
+                                    </small>
+
+                                    <p class="mt-2 mb-0">
+
+                                        Muy recomendable para quienes desean aprender desde cero.
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        </main>
+
+        <!--
+        ==========================================================
+        MODAL DE INSCRIPCIÓN
+        Permite al visitante solicitar información o inscribirse
+        en cualquiera de los cursos sin salir de la página.
+        ==========================================================
+    -->
+        <div class="modal fade" id="modalInscripcion" tabindex="-1" aria-labelledby="tituloModal" aria-hidden="true">
+
+            <div class="modal-dialog modal-lg">
+
+                <div class="modal-content">
+
+                    <form id="formInscripcion">
+
+                        <div class="modal-header">
+
+                            <h2 class="modal-title fs-4" id="tituloModal">
+
+                                Solicitud de inscripción
+
+                            </h2>
+
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar">
+
+                            </button>
+
+                        </div>
+
+                        <div class="modal-body">
+
+                            <div class="row">
+
+                                <div class="col-md-6 mb-3">
+
+                                    <label class="form-label">
+
+                                        Nombre completo
+
+                                    </label>
+
+                                    <input type="text" class="form-control" id="nombre" placeholder="Escriba su nombre">
+
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+
+                                    <label class="form-label">
+
+                                        Correo electrónico
+
+                                    </label>
+
+                                    <input type="email" class="form-control" id="correo"
+                                        placeholder="correo@ejemplo.com">
+
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+
+                                <div class="col-md-6 mb-3">
+
+                                    <label class="form-label">
+
+                                        Teléfono
+
+                                    </label>
+
+                                    <input type="tel" class="form-control" id="telefono" placeholder="809-000-0000">
+
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+
+                                    <label class="form-label">
+
+                                        Curso de interés
+
+                                    </label>
+
+                                    <select class="form-select" id="curso">
+
+                                        <option selected>
+
+                                            Seleccione un curso
+
+                                        </option>
+
+                                        <option>Inglés</option>
+
+                                        <option>Francés</option>
+
+                                        <option>Alemán</option>
+
+                                        <option>Italiano</option>
+
+                                        <option>Portugués</option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+
+                                    Nivel
+
+                                </label>
+
+                                <select class="form-select" id="nivel">
+
+                                    <option selected>
+
+                                        Seleccione un nivel
+
+                                    </option>
+
+                                    <option>Básico</option>
+
+                                    <option>Intermedio</option>
+
+                                    <option>Avanzado</option>
+
+                                </select>
+
+                            </div>
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+
+                                    Mensaje
+
+                                </label>
+
+                                <textarea class="form-control" id="mensaje" rows="5"
+                                    placeholder="Escriba aquí su mensaje">
+
+                            </textarea>
+
+                            </div>
+
+                        </div>
+
+                        <div class="modal-footer">
+
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+
+                                Cancelar
+
+                            </button>
+
+                            <button type="submit" class="btn btn-success">
+
+                                <i class="bi bi-send-fill"></i>
+
+                                Enviar solicitud
+
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--
+        ==========================================================
+        TOAST DE CONFIRMACIÓN
+        Informa al usuario que la solicitud fue enviada
+        correctamente.
+        ==========================================================
+    -->
+
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+
+            <div id="toastInscripcion" class="toast text-bg-success border-0" role="alert">
+
+                <div class="d-flex">
+
+                    <div class="toast-body">
+
+                        <i class="bi bi-check-circle-fill"></i>
+
+                        ¡Solicitud enviada correctamente! Nos comunicaremos contigo en menos de 24 horas.
+
+                    </div>
+
+                    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast">
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+    
+
+    <!--
+        ==========================================================
+        PIE DE PÁGINA
+        Contiene información institucional, enlaces rápidos,
+        redes sociales y acceso a las políticas de privacidad.
+        ==========================================================
+    -->
+
+    <footer class="footer-aci mt-5">
+
+        <div class="container">
+
+            <div class="row gy-4">
+
+                <!-- Información institucional -->
+                <div class="col-lg-4">
+
+                    <img src="img/logoACI.png" alt="Logo ACI" width="90">
+
+                    <h4 class="mt-3">
+
+                        Academia Centroamericana de Idiomas
+
+                    </h4>
+
+                    <p>
+
+                        Conectando culturas, formando futuros mediante una educación
+                        de calidad y oportunidades para el crecimiento profesional.
+
+                    </p>
+
+                </div>
+
+                <!-- Navegación -->
+                <div class="col-lg-4">
+
+                    <h5>
+
+                        Navegación
+
+                    </h5>
+
+                    <ul class="list-unstyled">
+
+                        <li>
+
+                            <a href="index.html">
+
+                                Inicio
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="nosotros.html">
+
+                                Nosotros
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="cursos.html">
+
+                                Cursos
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="noticias.html">
+
+                                Noticias
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="enlaces.html">
+
+                                Enlaces
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="contacto.html">
+
+                                Contacto
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Redes sociales -->
+                <div class="col-lg-4">
+
+                    <h5>
+
+                        Síguenos
+
+                    </h5>
+
+                    <div class="redes-sociales mb-4">
+
+                        <a href="#">
+
+                            <i class="bi bi-facebook"></i>
+
+                        </a>
+
+                        <a href="#">
+
+                            <i class="bi bi-instagram"></i>
+
+                        </a>
+
+                        <a href="#">
+
+                            <i class="bi bi-twitter-x"></i>
+
+                        </a>
+
+                        <a href="#">
+
+                            <i class="bi bi-youtube"></i>
+
+                        </a>
+
+                    </div>
+
+                    <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#modalPrivacidad">
+
+                        Políticas de Privacidad
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="text-center">
+
+                <p class="mb-0">
+
+                    © 2026 Academia Centroamericana de Idiomas (ACI). Todos los derechos reservados.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!--
+        ==========================================================
+        MODAL DE POLÍTICAS DE PRIVACIDAD
+        Se muestra sin necesidad de abandonar la página.
+        ==========================================================
+    -->
+
+    <div class="modal fade" id="modalPrivacidad" tabindex="-1" aria-hidden="true">
+
+        <div class="modal-dialog modal-lg">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h2 class="modal-title fs-4">
+
+                        Políticas de Privacidad
+
+                    </h2>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+
+                    </button>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <p>
+
+                        Academia Centroamericana de Idiomas (ACI) protege la
+                        información personal suministrada por sus estudiantes y
+                        visitantes.
+
+                    </p>
+
+                    <p>
+
+                        Los datos recopilados mediante los formularios del sitio
+                        únicamente serán utilizados para responder solicitudes de
+                        información, procesos de inscripción y comunicación
+                        institucional.
+
+                    </p>
+
+                    <p>
+
+                        La academia no comparte información personal con terceros
+                        sin autorización del usuario, salvo cuando sea requerido
+                        por la legislación vigente.
+
+                    </p>
+
+                    <p>
+
+                        Al utilizar este sitio web, el visitante acepta estas
+                        políticas de privacidad.
+
+                    </p>
+
+                </div>
+
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+
+                        Entendido
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ==========================================================
+        JAVASCRIPT
+        ========================================================== -->
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Archivos JavaScript del proyecto -->
+    <script src="js/app.js"></script>
+    <script src="js/darkmode.js"></script>
+    <script src="js/contacto.js"></script>
+
+</body>
+
+</html>
