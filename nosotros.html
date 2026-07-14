@@ -2,21 +2,21 @@
 <html lang="es">
 
 <head>
-<meta charset="UTF-8">
-        <!--
+    <meta charset="UTF-8">
+    <!--
     Aplica el modo oscuro antes de que la página se dibuje
     para evitar el destello del tema claro.
 -->
-        <script>
+    <script>
 
-            if (localStorage.getItem("modo") === "oscuro") {
+        if (localStorage.getItem("modo") === "oscuro") {
 
-                document.documentElement.classList.add("modo-oscuro");
+            document.documentElement.classList.add("modo-oscuro");
 
-            }
+        }
 
-        </script>
-        
+    </script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Academia Centroamericana de Idiomas (ACI). Aprende idiomas con profesores calificados mediante una metodología moderna e innovadora.">
@@ -65,25 +65,22 @@
 
     <header>
 
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg bg-white shadow-sm py-2">
+
             <div class="container-fluid px-4">
 
                 <a class="navbar-brand d-flex align-items-center" href="index.html">
 
-                    <img src="img/logoACI.png" alt="Logo ACI" width="70" class="me-3">
+                    <img src="img/logoACI.png" alt="Logo ACI" width="60" class="me-3">
 
                     <div>
 
-                        <h1 class="fs-4 mb-0">
-
+                        <h1 class="mb-0 nombre-aci">
                             Academia Centroamericana de Idiomas
-
                         </h1>
 
-                        <small class="text-muted">
-
-                            Constrong>Conectando culturas, formando futuros.</strong>
-
+                        <small class="slogan-aci">
+                            Conectando culturas, formando futuros.
                         </small>
 
                     </div>
@@ -96,87 +93,51 @@
 
                 </button>
 
-                <div class="collapse navbar-collapse" id="menuPrincipal">
+                <div class="collapse navbar-collapse justify-content-end" id="menuPrincipal">
 
-                    <ul class="navbar-nav ms-auto">
+                    <ul class="navbar-nav align-items-lg-center">
 
                         <li class="nav-item">
-
-                            <a class="nav-link" href="index.html">
-
-                                <i class="bi bi-house-fill"></i>
-
-                                Inicio
-
+                            <a class="nav-link active" href="index.html">
+                                <i class="bi bi-house-fill me-1"></i>Inicio
                             </a>
-
                         </li>
 
                         <li class="nav-item">
-
-                            <a class="nav-link active" href="nosotros.html">
-
-                                <i class="bi bi-people-fill"></i>
-
-                                Nosotros
-
+                            <a class="nav-link" href="nosotros.html">
+                                <i class="bi bi-people-fill me-1"></i>Nosotros
                             </a>
-
                         </li>
 
                         <li class="nav-item">
-
                             <a class="nav-link" href="cursos.html">
-
-                                <i class="bi bi-journal-bookmark-fill"></i>
-
-                                Cursos
-
+                                <i class="bi bi-journal-bookmark-fill me-1"></i>Cursos
                             </a>
-
                         </li>
 
                         <li class="nav-item">
-
                             <a class="nav-link" href="noticias.html">
-
-                                <i class="bi bi-newspaper"></i>
-
-                                Noticias
-
+                                <i class="bi bi-newspaper me-1"></i>Noticias
                             </a>
-
                         </li>
 
                         <li class="nav-item">
-
                             <a class="nav-link" href="enlaces.html">
-
-                                <i class="bi bi-play-circle-fill"></i>
-
-                                Enlaces
-
+                                <i class="bi bi-play-circle-fill me-1"></i>Enlaces
                             </a>
-
                         </li>
 
                         <li class="nav-item">
-
                             <a class="nav-link" href="contacto.html">
-
-                                <i class="bi bi-envelope-fill"></i>
-
-                                Contacto
-
+                                <i class="bi bi-envelope-fill me-1"></i>Contacto
                             </a>
-
                         </li>
 
                         <li class="nav-item ms-lg-3">
 
                             <button id="modoOscuro" class="btn btn-outline-primary">
 
-                                <i class="bi bi-moon-fill"></i>
+                                <i class="bi bi-moon-fill me-1"></i>
 
                                 Modo oscuro
 
@@ -679,7 +640,7 @@
                 <!-- Información institucional -->
                 <div class="col-lg-4">
 
-                    <img src="img/logoACI.png" alt="Logo ACI" width="90">
+                    <img src="img/logoACI-footer.png" alt="Logo ACI" width="90">
 
                     <h4 class="mt-3">
 

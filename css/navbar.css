@@ -1,0 +1,136 @@
+.navbar{
+
+    background:#fff;
+
+}
+
+.navbar-brand{
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.nombre-aci{
+
+    font-size:1.25rem;
+
+    font-weight:700;
+
+    color:#222;
+
+    margin:0;
+
+    line-height:1.2;
+
+    white-space:normal;
+
+}
+
+.slogan-aci{
+
+    font-size:.82rem;
+
+    color:#0D6EFD;
+
+}
+
+.navbar-nav .nav-link{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    font-weight:500;
+
+    margin-left:8px;
+
+}
+
+.navbar-nav .nav-link:hover{
+
+    color:#0D6EFD;
+
+}
+
+.navbar-nav .nav-link.active{
+
+    color:#0D6EFD;
+
+    font-weight:600;
+
+}
+
+#modoOscuro{
+
+    width:145px;
+
+}
+
+@media(max-width:991px){
+
+.navbar-brand img{
+
+    width:55px;
+
+}
+
+.nombre-aci{
+
+    font-size:1rem;
+
+}
+
+.slogan-aci{
+
+    font-size:.72rem;
+
+}
+
+.navbar-nav{
+
+    margin-top:15px;
+
+}
+
+.navbar-nav .nav-link{
+
+    padding:12px 0;
+
+}
+
+#modoOscuro{
+
+    width:100%;
+
+    margin-top:10px;
+
+}
+
+@media (max-width:992px){
+
+    .navbar-brand{
+
+        max-width:75%;
+
+    }
+
+    .nombre-aci{
+
+        font-size:1rem;
+
+    }
+
+    .slogan-aci{
+
+        display:none;
+
+    }
+
+}
+
+
+}

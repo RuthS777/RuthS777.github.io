@@ -1,0 +1,198 @@
+/* ==========================================================
+   TABLETS
+========================================================== */
+
+@media (max-width: 992px){
+
+    .navbar-brand h1{
+        font-size:1.2rem;
+    }
+
+    .navbar-brand small{
+        font-size:.75rem;
+    }
+
+    .hero{
+        padding:50px 0;
+    }
+
+    .hero h2{
+        font-size:3rem;
+    }
+
+    .hero p{
+        font-size:1.1rem;
+    }
+
+    .hero-imagen{
+        margin-top:40px;
+        max-width:100%;
+    }
+
+    .carousel img{
+        height:350px;
+    }
+
+}
+
+/* ==========================================================
+   CELULARES
+========================================================== */
+
+@media (max-width:768px){
+
+    .navbar-brand img{
+        width:55px !important;
+    }
+
+    .navbar-brand h1{
+
+        font-size:1rem;
+
+        line-height:1.2;
+
+    }
+
+    .navbar-brand small{
+
+        font-size:.70rem;
+
+    }
+
+    .hero{
+
+        text-align:center;
+
+        padding:40px 0;
+
+    }
+
+    .hero h2{
+
+        font-size:2.4rem;
+
+    }
+
+    .hero p{
+
+        font-size:1rem;
+
+    }
+
+    .hero .btn{
+
+        width:100%;
+
+        margin-bottom:12px;
+
+    }
+
+    .hero-imagen{
+
+        margin-top:35px;
+
+        max-width:100%;
+
+    }
+
+    .titulo-seccion{
+
+        font-size:2rem;
+
+    }
+
+    .carousel img{
+
+        height:230px;
+
+    }
+
+    .carousel-caption{
+
+        padding:10px;
+
+    }
+
+    .carousel-caption h3{
+
+        font-size:1.2rem;
+
+    }
+
+    .carousel-caption p{
+
+        font-size:.85rem;
+
+    }
+
+    iframe{
+
+        width:100% !important;
+
+        height:250px !important;
+
+    }
+
+    .footer-aci{
+
+        text-align:center;
+
+    }
+
+    .redes-sociales{
+
+        justify-content:center;
+
+    }
+
+}
+
+/* ==========================================================
+   CELULARES PEQUEÑOS
+========================================================== */
+
+@media (max-width:576px){
+
+    .navbar-brand{
+
+        max-width:70%;
+
+    }
+
+    .navbar-brand h1{
+
+        font-size:.9rem;
+
+    }
+
+    .navbar-brand small{
+
+        display:none;
+
+    }
+
+    .hero h2{
+
+        font-size:2rem;
+
+    }
+
+    .titulo-seccion{
+
+        font-size:1.7rem;
+
+    }
+
+    .card{
+
+        margin-bottom:20px;
+
+    }
+
+    .carousel img{
+
+        height:190px;
+
+    }
+
+}
