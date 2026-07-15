@@ -1,9 +1,11 @@
+/* Aplica un fondo blanco a la barra de navegación. */
 .navbar{
 
     background:#fff;
 
 }
 
+/* Organiza el logo y el nombre en una misma fila. */
 .navbar-brand{
 
     display:flex;
@@ -12,6 +14,7 @@
 
 }
 
+/* Define el tamaño, color y apariencia del nombre de la academia. */
 .nombre-aci{
 
     font-size:1.25rem;
@@ -28,6 +31,7 @@
 
 }
 
+/* Da estilo al eslogan resaltándolo con un tamaño menor y color azul. */
 .slogan-aci{
 
     font-size:.82rem;
@@ -36,6 +40,7 @@
 
 }
 
+/* Alinea el contenido de cada enlace del menú y agrega separación entre sus elementos. */
 .navbar-nav .nav-link{
 
     display:flex;
@@ -50,12 +55,14 @@
 
 }
 
+/* Cambia el color del enlace al pasar el cursor sobre él. */
 .navbar-nav .nav-link:hover{
 
     color:#0D6EFD;
 
 }
 
+/* Resalta el enlace correspondiente a la página activa. */
 .navbar-nav .nav-link.active{
 
     color:#0D6EFD;
@@ -64,12 +71,14 @@
 
 }
 
+/* Establece un ancho fijo para el botón del modo oscuro. */
 #modoOscuro{
 
     width:145px;
 
 }
 
+/* Ajusta el diseño para pantallas menores a 991 píxeles. */
 @media(max-width:991px){
 
 .navbar-brand img{
@@ -78,30 +87,35 @@
 
 }
 
+/* Disminuye el tamaño del nombre de la academia. */
 .nombre-aci{
 
     font-size:1rem;
 
 }
 
+/* Reduce el tamaño del eslogan para mejorar la adaptación. */
 .slogan-aci{
 
     font-size:.72rem;
 
 }
 
+/* Agrega un espacio superior al menú de navegación. */
 .navbar-nav{
 
     margin-top:15px;
 
 }
 
+/* Aumenta el área de los enlaces para facilitar su selección. */
 .navbar-nav .nav-link{
 
     padding:12px 0;
 
 }
 
+/* Hace que el botón ocupe todo el ancho disponible. */
 #modoOscuro{
 
     width:100%;
@@ -110,20 +124,24 @@
 
 }
 
+/* Realiza ajustes adicionales para pantallas pequeñas. */
 @media (max-width:992px){
 
+     /* Limita el ancho ocupado por el logo y el nombre. */
     .navbar-brand{
 
         max-width:75%;
 
     }
 
+    /* Mantiene un tamaño reducido para el nombre de la academia. */
     .nombre-aci{
 
         font-size:1rem;
 
     }
 
+     /* Oculta el eslogan para ahorrar espacio. */
     .slogan-aci{
 
         display:none;

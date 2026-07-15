@@ -1,33 +1,23 @@
-/*
-==========================================================
-ACADEMIA CENTROAMERICANA DE IDIOMAS (ACI)
-Archivo: contacto.js
-----------------------------------------------------------
-Controla el formulario de inscripción de los cursos,
-valida los datos obligatorios y muestra un Toast de
-confirmación cuando la solicitud se envía correctamente.
-==========================================================
-*/
-
+/* Ejecuta el código cuando la página termina de cargarse. */
 document.addEventListener("DOMContentLoaded", () => {
 
-    // Obtiene el formulario de inscripción.
+    /* Obtiene el formulario de inscripción. */
     const formulario = document.getElementById("formInscripcion");
 
-    // Si la página no tiene este formulario, el archivo termina.
+    /* Finaliza la ejecución si el formulario no existe en la página. */
     if (!formulario) {
 
         return;
 
     }
 
-    // Escucha el evento de envío del formulario.
+    /* Detecta el envío del formulario de inscripción. */
     formulario.addEventListener("submit", function (event) {
 
-        // Evita que la página se recargue.
+        /* Evita que la página se recargue al enviar el formulario. */
         event.preventDefault();
 
-        // Obtiene todos los controles del formulario.
+        /* Obtiene los campos del formulario. */
         const nombre = document.getElementById("nombre");
         const correo = document.getElementById("correo");
         const telefono = document.getElementById("telefono");
@@ -35,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const nivel = document.getElementById("nivel");
         const mensaje = document.getElementById("mensaje");
 
-        // Verifica que todos los campos tengan información.
+        /* Comprueba que todos los campos obligatorios estén completos. */
         if (
 
             nombre.value.trim() === "" ||
@@ -52,58 +42,57 @@ document.addEventListener("DOMContentLoaded", () => {
 
         ) {
 
+            /* Informa al usuario que debe completar todos los campos. */
             alert("Por favor complete todos los campos antes de enviar la solicitud.");
 
             return;
 
         }
 
-        // Cierra el modal de inscripción.
+        /* Obtiene la instancia del modal de inscripción. */
         const modal = bootstrap.Modal.getInstance(
             document.getElementById("modalInscripcion")
         );
 
+        /* Cierra el formulario de inscripción. */
         modal.hide();
 
-        // Muestra el Toast de confirmación.
+        /* Crea el mensaje de confirmación. */
         const toast = new bootstrap.Toast(
 
             document.getElementById("toastInscripcion")
 
         );
 
+        /* Muestra el mensaje de confirmación. */
         toast.show();
 
-        // Limpia el formulario para una nueva inscripción.
+        /* Limpia el formulario para una nueva inscripción. */
         formulario.reset();
 
     });
 
 });
 
-
-/*
-==========================================================
-FORMULARIO DE CONTACTO
-----------------------------------------------------------
-Valida el formulario de contacto y muestra un Toast de
-confirmación.
-==========================================================
-*/
-
+/* Obtiene el formulario de contacto. */
 const formularioContacto = document.getElementById("formContacto");
 
+/* Verifica que el formulario exista antes de utilizarlo. */
 if (formularioContacto) {
 
+    /* Detecta el envío del formulario de contacto. */
     formularioContacto.addEventListener("submit", function (event) {
 
+        /* Evita que la página se recargue. */
         event.preventDefault();
 
+        /* Obtiene los campos del formulario. */
         const nombre = document.getElementById("nombreContacto");
         const correo = document.getElementById("correoContacto");
         const asunto = document.getElementById("asuntoContacto");
         const mensaje = document.getElementById("mensajeContacto");
 
+        /* Comprueba que todos los campos obligatorios estén completos. */
         if (
 
             nombre.value.trim() === "" ||
@@ -116,20 +105,24 @@ if (formularioContacto) {
 
         ) {
 
+            /* Muestra un aviso cuando existen campos vacíos. */
             alert("Debe completar todos los campos del formulario.");
 
             return;
 
         }
 
+        /* Crea el mensaje de confirmación. */
         const toast = new bootstrap.Toast(
 
             document.getElementById("toastContacto")
 
         );
 
+        /* Muestra el mensaje de confirmación. */
         toast.show();
 
+        /* Limpia el formulario después del envío. */
         formularioContacto.reset();
 
     });

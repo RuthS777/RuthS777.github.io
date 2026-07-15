@@ -1,20 +1,18 @@
-/* Aplica la fuente principal del sitio a todo el documento. */
+/* Aplica la fuente principal a todo el contenido de la página. */
 body {
+
     font-family: 'Poppins', sans-serif;
+
 }
 
-/* Cambia suavemente los colores cuando exista alguna interacción. */
+/* Agrega una transición suave a todos los elementos. */
 * {
+
     transition: .3s;
+
 }
 
-/*
-==========================================================
-TRANSICIONES GENERALES
-Permiten que los cambios visuales sean suaves.
-==========================================================
-*/
-
+/* Suaviza los cambios de color de fondo y texto del sitio. */
 body{
 
     transition:
@@ -25,6 +23,7 @@ body{
 
 }
 
+/* Hace que el cambio de color de la barra de navegación sea gradual. */
 .navbar{
 
     transition:
@@ -33,6 +32,7 @@ body{
 
 }
 
+/* Aplica transiciones suaves a los principales contenedores del sitio. */
 .card,
 .tarjeta-aci,
 .accordion-item,
@@ -47,13 +47,7 @@ footer{
 
 }
 
-/*
-==========================================================
-EFECTO SOBRE LAS IMÁGENES
-Hace que aumenten ligeramente al pasar el mouse.
-==========================================================
-*/
-
+/* Amplía ligeramente las imágenes al pasar el cursor sobre ellas. */
 img:hover {
 
     transform: scale(1.02);

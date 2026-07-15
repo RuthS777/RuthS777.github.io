@@ -25,12 +25,7 @@
     margin-bottom: 20px;
 }
 
-/* ==========================================================
-   TARJETAS DE CURSOS
-   ----------------------------------------------------------
-   Personaliza la apariencia de las tarjetas utilizadas para
-   mostrar los idiomas impartidos por la academia.
-   ========================================================== */
+/* tarjetas de los cursos */
 
 /* Da una apariencia moderna a las tarjetas de cursos. */
 .tarjeta-curso{
@@ -64,8 +59,7 @@
 }
 
 /* ==========================================================
-   LLAMADO A LA ACCIÓN (CTA)
-   ----------------------------------------------------------
+   LLAMADO A LA ACCIÓN (CTA):
    Resalta la invitación principal para que el visitante
    conozca los programas ofrecidos por la academia.
    ========================================================== */

@@ -1,22 +1,18 @@
 /* Agrega espacio vertical alrededor de la portada principal. */
 .hero {
+
     padding: 80px 0;
+
 }
 
-/* Limita el tamaño de la imagen para mantener un diseño equilibrado. */
+/* Limita el ancho de la imagen principal para mantener un diseño equilibrado. */
 .hero-imagen {
+
     max-width: 500px;
+
 }
 
-/* Redondea las imágenes del carrusel para dar una apariencia moderna. */
-/*
-==========================================================
-CARRUSEL
-----------------------------------------------------------
-Mantiene un tamaño uniforme y evita imágenes demasiado altas.
-==========================================================
-*/
-
+/* Centra el carrusel y limita su ancho máximo. */
 .carousel {
 
     max-width: 1100px;
@@ -25,6 +21,7 @@ Mantiene un tamaño uniforme y evita imágenes demasiado altas.
 
 }
 
+/* Ajusta el tamaño de las imágenes y recorta el contenido sin deformarlo. */
 .carousel img {
 
     width: 100%;
@@ -37,7 +34,7 @@ Mantiene un tamaño uniforme y evita imágenes demasiado altas.
 
 }
 
-/* Mejora la legibilidad del texto mostrado sobre las imágenes. */
+/* Mejora la legibilidad del texto sobre las imágenes del carrusel. */
 .carousel-caption {
 
     background: rgba(0, 0, 0, .45);
@@ -50,10 +47,7 @@ Mantiene un tamaño uniforme y evita imágenes demasiado altas.
 
 }
 
-/* ==========================================================
-   ANIMACIÓN SUAVE DE LA IMAGEN PRINCIPAL
-========================================================== */
-
+/* Aplica una animación de entrada a la imagen principal. */
 .hero-float {
 
     animation: jellyEntrada .9s cubic-bezier(.25, .8, .25, 1);
@@ -62,8 +56,10 @@ Mantiene un tamaño uniforme y evita imágenes demasiado altas.
 
 }
 
+/* Define una animación con un efecto de rebote suave. */
 @keyframes jellyEntrada {
 
+    /* Inicia la animación con la imagen desplazada y transparente. */
     0% {
 
         opacity: 0;
@@ -73,6 +69,7 @@ Mantiene un tamaño uniforme y evita imágenes demasiado altas.
 
     }
 
+    /* Hace visible la imagen con un ligero rebote hacia arriba. */
     45% {
 
         opacity: 1;
@@ -82,6 +79,7 @@ Mantiene un tamaño uniforme y evita imágenes demasiado altas.
 
     }
 
+    /* Reduce el rebote acercándose a la posición final. */
     70% {
 
         transform:
@@ -89,6 +87,7 @@ Mantiene un tamaño uniforme y evita imágenes demasiado altas.
 
     }
 
+    /* Suaviza el movimiento antes de finalizar la animación. */
     85% {
 
         transform:
@@ -96,6 +95,7 @@ Mantiene un tamaño uniforme y evita imágenes demasiado altas.
 
     }
 
+    /* Finaliza la animación con la imagen en su posición normal. */
     100% {
 
         transform:

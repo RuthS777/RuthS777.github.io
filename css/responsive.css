@@ -1,84 +1,92 @@
-/* ==========================================================
-   TABLETS
-========================================================== */
+/* Aplica ajustes para mejorar la visualización en tablets. */
+@media (max-width: 992px) {
 
-@media (max-width: 992px){
-
-    .navbar-brand h1{
-        font-size:1.2rem;
+    /* Reduce el tamaño del título de la barra de navegación. */
+    .navbar-brand h1 {
+        font-size: 1.2rem;
     }
 
-    .navbar-brand small{
-        font-size:.75rem;
+    /* Disminuye el tamaño del texto secundario de la barra de navegación. */
+    .navbar-brand small {
+        font-size: .75rem;
     }
 
-    .hero{
-        padding:50px 0;
+    /* Reduce el espacio vertical de la sección principal. */
+    .hero {
+        padding: 50px 0;
     }
 
-    .hero h2{
-        font-size:3rem;
+    /* Ajusta el tamaño del título principal. */
+    .hero h2 {
+        font-size: 3rem;
     }
 
-    .hero p{
-        font-size:1.1rem;
+    /* Reduce ligeramente el tamaño del texto descriptivo. */
+    .hero p {
+        font-size: 1.1rem;
     }
 
-    .hero-imagen{
-        margin-top:40px;
-        max-width:100%;
+    /* Agrega espacio superior y adapta el ancho de la imagen principal. */
+    .hero-imagen {
+        margin-top: 40px;
+        max-width: 100%;
     }
 
-    .carousel img{
-        height:350px;
+    /* Disminuye la altura de las imágenes del carrusel. */
+    .carousel img {
+        height: 350px;
     }
 
 }
 
-/* ==========================================================
-   CELULARES
-========================================================== */
+/* Aplica ajustes para mejorar la visualización en celulares. */
+@media (max-width:768px) {
 
-@media (max-width:768px){
-
-    .navbar-brand img{
-        width:55px !important;
+    /* Reduce el tamaño del logo de la barra de navegación. */
+    .navbar-brand img {
+        width: 55px !important;
     }
 
-    .navbar-brand h1{
+      /* Disminuye el tamaño del nombre de la academia. */
+    .navbar-brand h1 {
 
-        font-size:1rem;
+        font-size: 1rem;
 
-        line-height:1.2;
-
-    }
-
-    .navbar-brand small{
-
-        font-size:.70rem;
+        line-height: 1.2;
 
     }
 
-    .hero{
+    /* Reduce el tamaño del texto secundario. */
+    .navbar-brand small {
 
-        text-align:center;
-
-        padding:40px 0;
-
-    }
-
-    .hero h2{
-
-        font-size:2.4rem;
+        font-size: .70rem;
 
     }
 
+    /* Centra el contenido y disminuye el espacio vertical de la sección principal. */
+    .hero {
+
+        text-align: center;
+
+        padding: 40px 0;
+
+    }
+
+    /* Reduce el tamaño del título principal. */
+    .hero h2 {
+
+        font-size: 2.4rem;
+
+    }
+
+    /* Ajusta el tamaño del texto descriptivo. */
     .hero p{
 
         font-size:1rem;
 
     }
 
+    /* Hace que los botones ocupen todo el ancho disponible. */
     .hero .btn{
 
         width:100%;
@@ -87,6 +95,7 @@
 
     }
 
+    /* Agrega espacio superior y adapta la imagen al ancho disponible. */
     .hero-imagen{
 
         margin-top:35px;
@@ -95,36 +104,42 @@
 
     }
 
+    /* Reduce el tamaño de los títulos de las secciones. */
     .titulo-seccion{
 
         font-size:2rem;
 
     }
 
+    /* Disminuye la altura de las imágenes del carrusel. */
     .carousel img{
 
         height:230px;
 
     }
 
+    /* Reduce el espacio interno de la descripción del carrusel. */
     .carousel-caption{
 
         padding:10px;
 
     }
 
+    /* Ajusta el tamaño del título del carrusel. */
     .carousel-caption h3{
 
         font-size:1.2rem;
 
     }
 
+    /* Reduce el tamaño del texto del carrusel. */
     .carousel-caption p{
 
         font-size:.85rem;
 
     }
 
+    /* Adapta el mapa al ancho de la pantalla. */
     iframe{
 
         width:100% !important;
@@ -133,12 +148,14 @@
 
     }
 
+    /* Centra el contenido del pie de página. */
     .footer-aci{
 
         text-align:center;
 
     }
 
+    /* Centra los iconos de las redes sociales. */
     .redes-sociales{
 
         justify-content:center;
@@ -147,48 +164,52 @@
 
 }
 
-/* ==========================================================
-   CELULARES PEQUEÑOS
-========================================================== */
-
+/* Aplica ajustes para mejorar la visualización en celulares pequeños. */
 @media (max-width:576px){
 
+    /* Reduce el espacio ocupado por el logo y el nombre. */
     .navbar-brand{
 
         max-width:70%;
 
     }
 
+    /* Disminuye aún más el tamaño del nombre de la academia. */
     .navbar-brand h1{
 
         font-size:.9rem;
 
     }
 
+    /* Oculta el texto secundario para ahorrar espacio. */
     .navbar-brand small{
 
         display:none;
 
     }
 
+    /* Reduce el tamaño del título principal. */
     .hero h2{
 
         font-size:2rem;
 
     }
 
+    /* Disminuye el tamaño de los títulos de las secciones. */
     .titulo-seccion{
 
         font-size:1.7rem;
 
     }
 
+    /* Agrega separación entre las tarjetas. */
     .card{
 
         margin-bottom:20px;
 
     }
 
+    /* Reduce la altura de las imágenes del carrusel. */
     .carousel img{
 
         height:190px;

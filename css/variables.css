@@ -1,91 +1,70 @@
-/*
-    ==========================================================
-    VARIABLES GLOBALES DEL SITIO WEB
-    ----------------------------------------------------------
-    Este archivo centraliza los colores, tamaños y estilos
-    reutilizados en todas las páginas para mantener una
-    identidad visual uniforme y facilitar el mantenimiento.
-    ==========================================================
-*/
-
+/* Define variables globales para reutilizar estilos en todo el sitio web. */
 :root {
 
-    /* =======================
-    PALETA DE COLORES
-       ======================= */
+   /* Almacena el color principal de la identidad visual. */
+   --color-primario: #0D6EFD;
 
-    --color-primario: #0D6EFD;
+   /* Define el color utilizado al pasar el cursor sobre elementos principales. */
+   --color-primario-hover: #0B5ED7;
 
-    --color-primario-hover: #0B5ED7;
+   /* Establece un color complementario para el diseño. */
+   --color-secundario: #0A4F9E;
 
-    --color-secundario: #0A4F9E;
+   /* Define el color de fondo principal del sitio. */
+   --color-fondo: #FFFFFF;
 
-    --color-fondo: #FFFFFF;
+   /* Establece un color de fondo alternativo para algunas secciones. */
+   --color-fondo-secundario: #F8F9FA;
 
-    --color-fondo-secundario: #F8F9FA;
+   /* Define el color principal del texto. */
+   --color-texto: #212529;
 
-    --color-texto: #212529;
+   /* Establece un color secundario para textos menos destacados. */
+   --color-texto-secundario: #6C757D;
 
-    --color-texto-secundario: #6C757D;
+   /* Define el color utilizado para mensajes de éxito. */
+   --color-exito: #198754;
 
-    --color-exito: #198754;
+   /* Establece el color para advertencias o avisos. */
+   --color-advertencia: #FFC107;
 
-    --color-advertencia: #FFC107;
+   /* Define el color utilizado para errores o alertas. */
+   --color-error: #DC3545;
 
-    --color-error: #DC3545;
+   /* Especifica la tipografía principal del sitio web. */
+   --fuente-principal: 'Poppins', sans-serif;
 
+   /* Define un espaciado pequeño reutilizable. */
+   --espacio-xs: 10px;
 
+   /* Establece un espaciado estándar para diferentes elementos. */
+   --espacio-sm: 20px;
 
-    /* =======================
-    TIPOGRAFÍA
-       ======================= */
+   /* Define un espaciado mediano para separar secciones. */
+   --espacio-md: 40px;
 
-    --fuente-principal: 'Poppins', sans-serif;
+   /* Establece un espaciado amplio para bloques principales. */
+   --espacio-lg: 70px;
 
+   /* Define un radio pequeño para bordes redondeados. */
+   --radio-sm: 10px;
 
+   /* Establece un radio mediano para los bordes. */
+   --radio-md: 15px;
 
-    /* =======================
-    ESPACIADOS
-       ======================= */
+   /* Define un radio amplio para elementos más redondeados. */
+   --radio-lg: 25px;
 
-    --espacio-xs: 10px;
+   /* Aplica una sombra suave a los elementos. */
+   --sombra-suave: 0 8px 20px rgba(0, 0, 0, .08);
 
-    --espacio-sm: 20px;
+   /* Define una sombra de mayor intensidad. */
+   --sombra-media: 0 12px 30px rgba(0, 0, 0, .12);
 
-    --espacio-md: 40px;
+   /* Establece una sombra para el efecto al pasar el cursor. */
+   --sombra-hover: 0 15px 35px rgba(13, 110, 253, .20);
 
-    --espacio-lg: 70px;
-
-
-
-    /* =======================
-    BORDES
-       ======================= */
-
-    --radio-sm: 10px;
-
-    --radio-md: 15px;
-
-    --radio-lg: 25px;
-
-
-
-    /* =======================
-    SOMBRAS
-       ======================= */
-
-    --sombra-suave: 0 8px 20px rgba(0, 0, 0, .08);
-
-    --sombra-media: 0 12px 30px rgba(0, 0, 0, .12);
-
-    --sombra-hover: 0 15px 35px rgba(13, 110, 253, .20);
-
-
-
-    /* =======================
-    TRANSICIONES
-       ======================= */
-
-    --transicion: .30s;
+   /* Define la duración estándar de las transiciones. */
+   --transicion: .30s;
 
 }
